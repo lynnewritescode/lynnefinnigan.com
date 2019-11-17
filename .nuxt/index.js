@@ -14,6 +14,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 import nuxt_plugin_vueparallax_9cb24f18 from 'nuxt_plugin_vueparallax_9cb24f18' // Source: ../plugins/vue-parallax (mode: 'all')
 import nuxt_plugin_vuesmoothscroll_6dff59e2 from 'nuxt_plugin_vuesmoothscroll_6dff59e2' // Source: ../plugins/vue-smooth-scroll (mode: 'all')
 import nuxt_plugin_scrollreveal_902961d2 from 'nuxt_plugin_scrollreveal_902961d2' // Source: ../plugins/scroll-reveal (mode: 'client')
+import nuxt_plugin_ga_fb0a2534 from 'nuxt_plugin_ga_fb0a2534' // Source: ../plugins/ga.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -157,6 +158,10 @@ async function createApp (ssrContext) {
 
   if (process.client && typeof nuxt_plugin_scrollreveal_902961d2 === 'function') {
     await nuxt_plugin_scrollreveal_902961d2(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_ga_fb0a2534 === 'function') {
+    await nuxt_plugin_ga_fb0a2534(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

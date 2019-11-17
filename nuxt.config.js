@@ -70,7 +70,8 @@ export default {
   plugins: [
     '~/plugins/vue-parallax',
     '~/plugins/vue-smooth-scroll',
-    { src: '~/plugins/scroll-reveal', ssr: false }
+    { src: '~/plugins/scroll-reveal', ssr: false },
+    { src: '~plugins/ga.js', mode: 'client' }
   ],
 
   /*
