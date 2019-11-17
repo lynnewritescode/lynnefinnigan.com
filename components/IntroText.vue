@@ -184,7 +184,8 @@ $dark: #3f3d56;
   }
 
   .subtitle {
-    max-width: 600px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .social-share {
@@ -205,6 +206,7 @@ $dark: #3f3d56;
     margin: 0;
     font-size: 30px;
     line-height: 33px;
+    max-width: 600px;
   }
 
   .social-share {

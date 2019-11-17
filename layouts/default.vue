@@ -102,7 +102,6 @@ p {
 
   &.preamble {
     font-size: 19px;
-    line-height: 30px;
   }
 
   a {
@@ -212,6 +211,7 @@ nav {
 
     &.preamble {
       font-size: 24px;
+      line-height: 30px;
     }
   }
 
