@@ -19,7 +19,9 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content:
+          process.env.npm_package_description ||
+          'Senior front-end developer, mentor, and open-source contributor. I love starting with a blank page and bringing beautiful designs to life on the web.'
       }
     ],
 
